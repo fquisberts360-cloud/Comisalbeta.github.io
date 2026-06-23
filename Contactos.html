@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisal - Contactos</title>
+  <link rel="stylesheet" href="CSS/Style5.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/Recursos Comisal/Logo/WhatsApp Image 2026-04-23 at 11.57.50 AM-Photoroom (1).png" alt="Comisal Logo">
+        </div>
+        
+        <button class="menu-toggle" id="mobile-menu-btn">☰</button>
+
+        <nav id="nav-menu">
+                <a href="index.Html">Inicio</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Novedades.html">Novedades</a>
+            <a href="Acerca de.html">Acerca de</a>
+            <a href="Contactos.html">Contactos</a>
+            <a href="Iniciar Sesión.html"> <button class="btn">Iniciar Sesión</button> </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Contactos</h1>
+
+        <section class="contact-channels">
+            <h2>Canales de Contacto</h2>
+            
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <h3>Correo Electrónico</h3>
+               <img src="https://www.nicepng.com/png/detail/180-1808900_add-email-outline-comments-simbolo-correo-electronico-png.png" alt="Add Email Outline Comments - Simbolo Correo Electronico Png@nicepng.com">
+                    <p>Correo Electrónico</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>WhatsApp</h3>
+                    <img src="https://www.nicepng.com/png/detail/5-53061_logo-whatsapp-png-blanco-graphic-royalty-free-stock.png" alt="Logo Whatsapp Png Blanco Graphic Royalty Free Stock - Logo Do Whatsapp Roxo@nicepng.com">
+                    <p>Número de WhatsApp</p>
+                </div>
+
+                <div class="channel-card">
+                    <h3>Messenger</h3>
+                    <img src="https://www.nicepng.com/png/detail/987-9876467_mesenger-chatboten-we-build-chatbots-facebook-messenger-facebook.png" alt="Mesenger Chatboten We Build Chatbots Facebook Messenger - Facebook Messenger Logo@nicepng.com">
+                    <p>Enlace Messenger</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-left">
+            <div class="line-thick"></div>
+            <div class="line-thin"></div>
+        </div>
+
+        <section class="direct-chat">
+            <h2>Chat Directo</h2>
+            
+            <form class="chat-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="input-group">
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Teléfono">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="input-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" placeholder="Asunto">
+                    </div>
+                </div>
+
+                <textarea class="form-textarea"></textarea>
+
+                <div class="form-submit">
+                    <button type="button" class="btn">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h4>Ubicaciones</h4>
+            <p>La Paz, Zona Sur, Calacoto, Avenida Julio Patiño Calle 17, N°1089</p>
+            <p>Ubicación en Tupiza</p>
+        </div>
+        <div class="footer-right">
+            <h4>Contáctanos Aquí</h4>
+            <a href="Contactos.html"><button class="btn btn-outline">Ver contactos</button></a> 
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
