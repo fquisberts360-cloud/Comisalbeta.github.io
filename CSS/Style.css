@@ -1,6 +1,6 @@
 font-face { 
-    font-family:'Open Sans Bold', sans-serif;
-    src: url('Fuentes/OpenSans-Bold.ttf') format('.ttf');
+    font-family:'Open Sans Bold', 'roboto';
+    src: url('Fuentes/OpenSans-Bold.ttf') format('.ttf'), src: url('Fuentes/Roboto-Regular.ttf') format('.ttf') ;
 }
 :root {
             
@@ -9,15 +9,13 @@ font-face {
             --text-light: #666666;
             --bg-light: #f8f9fa;
             --white: #ffffff;
-            --font-main: 'Open Sans Bold', sans-serif;
-            --font-secondary:'sans-serif';
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: var(--font-main);
+            font-family:'Open Sans Bold', 'roboto';
         }
 
         body {
