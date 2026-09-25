@@ -1,21 +1,17 @@
-@font-face{ 
-    font-family:'Open Sans Bold' ;
-    src: url('Fuentes/OpenSans-Bold.ttf') format('.ttf');
-}
 :root {
-            
             --primary-blue: #1a3256;
             --text-dark: #333333;
             --text-light: #666666;
             --bg-light: #f8f9fa;
             --white: #ffffff;
+            --font-main: 'Open Sans Bold', sans-serif;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family:'Open Sans Bold';
+            font-family: var(--font-main);
         }
 
         body {
