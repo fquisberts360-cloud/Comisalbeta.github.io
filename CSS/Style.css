@@ -22,6 +22,7 @@
             background: linear-gradient( 135deg,  rgb(245, 245, 247) 55%, rgb(232, 239, 248) 60% );
             color: var(--text-dark);
             line-height: 1.6;
+             font-family:'Open Sans Bold';
         }
 
         a {
