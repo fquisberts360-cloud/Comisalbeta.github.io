@@ -137,7 +137,7 @@ nav a:hover {
 }
 
 .btn {
-    background-color: var(--primary-blue);
+    background: var(--primary-blue);
     color: var(--white);
     padding: 0.6rem 1.5rem;
     border: none;
@@ -145,13 +145,17 @@ nav a:hover {
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 700;
-    transition: background 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
+
 
 .btn:hover {
-    background-color: #112240;
+    background: #112240;
+    transform: scale(1.25);
 }
-
 .btn-outline {
     background-color: var(--white);
     color: var(--primary-blue);
@@ -298,13 +302,29 @@ nav a:hover {
     transform: translateY(-50%) rotate(-45deg);
 }
 
-.separador img {
-    display: block;
+@keyframes zoomCascoFinal {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.18);
+    }
 }
 
-.servicios {
-    padding: 1.5rem 5% 5rem;
-    text-align: center;
+.separador .icono-casco {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.separador.visible .icono-casco {
+    animation: zoomCascoFinal 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.75s forwards;
+}
+
+.separador .icono-casco:hover {
+    animation: none;
+    transform: scale(1.35);
 }
 
 footer {
