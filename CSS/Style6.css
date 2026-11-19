@@ -98,7 +98,7 @@ nav a:hover {
 }
 
 .btn {
-    background-color: var(--primary-blue);
+    background: var(--primary-blue);
     color: var(--white);
     padding: 0.6rem 1.5rem;
     border: none;
@@ -106,11 +106,15 @@ nav a:hover {
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 700;
-    transition: background 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .btn:hover {
-    background-color: #112240;
+    background: #112240;
+    transform: scale(1.25);
 }
 
 .btn-outline {
