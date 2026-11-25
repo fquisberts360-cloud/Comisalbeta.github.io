@@ -117,7 +117,7 @@ nav a:hover {
 
 .banner-contactos {
     position: relative;
-    padding: 5rem 5%; /* Banner ampliado para que tenga mejor presencia visual */
+    padding: 5rem 5%; 
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -208,6 +208,7 @@ nav a:hover {
     height: 110px;
     object-fit: contain;
     margin-bottom: 1.5rem;
+    filter: none;
 }
 
 .tarjeta-canal a {
